@@ -1,0 +1,125 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Program {
+
+	public static void main(String[] args) {
+		List<Car> dealer = new ArrayList<>();
+		dealer.add(new Car("mercedes c", 2010, 2.2, 20000));
+		dealer.add(new Car("mercedes e", 2008, 2.2, 20000));
+		dealer.add(new Car("mercedes c", 2012, 2.2, 22000));
+		dealer.add(new Car("audi a5", 2010, 2.0, 20000));
+		dealer.add(new Car("audi a3", 1996, 1.8, 5000));
+		dealer.add(new Car("audi a4", 1999, 2.0, 6000));
+		dealer.add(new Car("audi a7", 2017, 2.0, 50000));
+		dealer.add(new Car("audi q7", 2017, 3.0, 80000));
+		dealer.add(new Car("audi q7", 2017, 3.0, 80000));
+//		Iterator<Car> iter = dealer.iterator();
+//		
+//		while (iter.hasNext()) {
+//			Car car = iter.next();
+//			if (car.getPrice() > 20000) {
+//				iter.remove();
+//			}
+//		}
+		
+//		Scanner sc = new Scanner(System.in);
+//		int maxY = sc.nextInt();
+//		int minY = sc.nextInt();
+//		int maxPrice = sc.nextInt();
+		
+		List<Car> cars = new ArrayList<>();
+//				dealer.stream()
+//					.filter(e -> e.getPrice() < maxPrice && 
+//							e.getYear() > minY &&
+//							e.getYear() < maxY)
+//			.collect(Collectors.toList());
+		
+//		for (Iterator<Car> i = dealer.iterator();
+//				i.hasNext();) {
+//			Car car = i.next();
+//			if (car.getPrice() < maxPrice && 
+//					car.getYear() > minY &&
+//					car.getYear() < maxY) {
+//				cars.add(car);
+//			};
+//		}
+		
+//		cars.forEach(System.out::println);
+		
+		for (ListIterator<Car> iter = 
+				dealer.listIterator(dealer.size());
+				iter.hasPrevious();
+				) {
+			Car car = iter.previous();
+		}
+		
+//		for (Car car : dealer) {
+//			System.out.println(car)
+//		}
+//		dealer.forEach((Car car) -> System.out.println(car));
+//		dealer.forEach(e -> System.out.println(e));
+//		dealer.forEach(System.out::println);
+	}
+
+}
+
+
+//---------------------------------------------------------------------------------------
+
+
+
+public class Car {
+	private String model;
+	private int year;
+	private double capacity;
+	private int price;
+	
+	public Car(String model, int year, double capacity, int price) {
+		this.model = model;
+		this.year = year;
+		this.capacity = capacity;
+		this.price = price;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public double getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(double capacity) {
+		this.capacity = capacity;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [model=" + model + ", year=" + year + ", capacity=" + capacity + ", price=" + price + "]";
+	}
+}
