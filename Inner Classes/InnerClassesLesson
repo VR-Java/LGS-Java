@@ -264,3 +264,22 @@ public class Program {
 
 }
 
+
+//-------------------------------------------------------------------------------------
+
+
+public class CarBuilderExample {
+
+	public static void main(String[] args) {
+		Car car = new Car.Builder().year(2011)
+									.body("Sedan")
+									.make("Audi")
+									.model("a8")
+									.build();
+		System.out.println(car);
+	}
+
+}
+
+
+
