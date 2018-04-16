@@ -2,9 +2,12 @@ D:                -> change disk
 cd path/          -> go to some folder
 ls -la            -> list files with info
 
+------------
 cat >> README.md  -> create new file
 input some data   -> data will be written to file
 Ctrl + D          -> save and exit
+
+cat >> README.md  -> second time used command will modify your file by adding extra text on the end of file
 
 _________________________________
 
