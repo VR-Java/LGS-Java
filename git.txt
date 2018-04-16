@@ -1,0 +1,10 @@
+cat >> README.md  -> create new file
+input some data   -> data will be written to file
+Ctrl + D          -> save and exit
+
+_________________________________
+
+create folder for Git
+git init      -> 
+git status    -> shows all files status
+git add .     -> add all files
