@@ -1,3 +1,7 @@
+D:                -> change disk
+cd path/          -> go to some folder
+ls -la            -> list files with info
+
 cat >> README.md  -> create new file
 input some data   -> data will be written to file
 Ctrl + D          -> save and exit
@@ -19,5 +23,8 @@ git add .     -> add all files
 git remote add origin https://github.com/VR-Java/LGS-Java.git -> connect folder on computer with Github repository
 
 git commit -m "message"
-git push origin master
+git push origin XXXX -> XXXX=branch
+
+
+
 
