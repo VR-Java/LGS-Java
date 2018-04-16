@@ -4,7 +4,20 @@ Ctrl + D          -> save and exit
 
 _________________________________
 
+Global config
+
+git config --global user.name "VR-Java"
+git config --global user.email "email..."
+
+_________________________________
+
 create folder for Git
 git init      -> 
 git status    -> shows all files status
 git add .     -> add all files
+
+git remote add origin https://github.com/VR-Java/LGS-Java.git -> connect folder on computer with Github repository
+
+git commit -m "message"
+git push origin master
+
