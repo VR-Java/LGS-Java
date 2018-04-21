@@ -29,5 +29,15 @@ git commit -m "message"
 git push origin XXXX -> XXXX=branch
 
 
+__________________________________
+
+push project to existing Git repository:
+
+git init
+git add .
+git commit -m "my commit"
+git remote set-url origin git@github.com:username/repo.git
+// create new branch or...
+git push origin master
 
 
