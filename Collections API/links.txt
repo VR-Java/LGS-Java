@@ -1,2 +1,3 @@
 http://www.quizful.net/post/Java-Collections
 https://habrahabr.ru/post/237043/
+https://www.cs.wcupa.edu/rkline/ds/hash-sets.html
